@@ -1,20 +1,20 @@
 <style>
-    <?php include get_template_directory() . '/assets/modulos/modulo-slider/slider.css'; ?>
+    <?php include get_template_directory() . '/assets/modulos/modulo-loop-timeline/loop-timeline.css'; ?>
 </style>
 
 <!--Slider-->
 
 <div id="carrusel-reconocimiento" class="container">
-    <div class="carusel-page-loop-timeline slider-fluid">
+    <div class="carusel-destacados slider-fluid">
 
         <?php
         $i = 0;
         $e = 0;
         $temp = $wp_query;
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-        $post_per_page = 4; // -1 shows all posts
+        $post_per_page = 3; // -1 shows all posts
         $args = array(
-            'post_type' => 'loop-timeline',
+            'post_type' => 'loop_timeline',
             'orderby' => 'date',
             'order' => 'DESC',
             'paged' => $paged,
@@ -39,7 +39,7 @@
 
 
         <?php else : ?>
-            <p class="text-center">Oops!, Lo sentimos, no hay contenido que mostrar</p>
+            <p class="text-center">Oops!, Lo sentimos, no hay contenido  que mostrar</p>
         <?php endif;
         wp_reset_query();
         $wp_query = $temp ?>

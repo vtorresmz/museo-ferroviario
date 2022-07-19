@@ -193,3 +193,9 @@ register_sidebar(array('name' => 'Logo academia', 'id' => 'logo_footer', 'before
 
 add_action('widgets_init', 'widget_menu_footer');
 /*zona de widgets*/
+
+
+
+/*modulos*/
+//modulo time line
+include get_template_directory() . '/assets/modulos/modulo-loop-timeline/core-loop-timeline.php';
