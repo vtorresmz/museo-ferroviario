@@ -13,10 +13,10 @@ function titan_framework()
 {
     wp_register_style('fuentes', 'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap', 'all');
     wp_enqueue_style('iconos', get_template_directory_uri() . '/assets/librerias/fafa/css/all.css', 'all');
-    wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/librerias/css/bootstrap.css', 'all');
+    wp_register_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css', 'all');
     wp_enqueue_style('root', get_template_directory_uri() . '/assets/librerias/css/root.css', 'all');
     wp_enqueue_style('base', get_template_directory_uri() . '/assets/librerias/css/base.css', 'all');
-    wp_enqueue_style('academia', get_template_directory_uri() . '/assets/librerias/css/academia.css', 'all');
+    wp_enqueue_style('museo', get_template_directory_uri() . '/assets/librerias/css/museo.css', 'all');
     wp_enqueue_style('slider-fluid', get_template_directory_uri() . '/assets/librerias/css/slider-fluid.css', 'all');
     wp_enqueue_style('mobile', get_template_directory_uri() . '/assets/librerias/css/mobile.css', 'all');
 
@@ -30,9 +30,9 @@ function titan_framework()
     wp_enqueue_style('fuentes');
     wp_enqueue_style('root');
     wp_enqueue_style('base');
-    wp_enqueue_style('academia');
+    wp_enqueue_style('museo');
     wp_enqueue_style('mobile');
-    wp_enqueue_style('bootstrap');
+    wp_enqueue_style('bootstrap-css');
 
 
 }
@@ -60,7 +60,7 @@ function titans_script()
 
 
 
-        wp_register_script('bootstrap-js', get_bloginfo('template_directory') . '/assets/librerias/js/bootstrap.js', array('jquery'), '1', true);
+        wp_register_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js', true);
         //wp_register_script('bootstrap-bundle-js', get_bloginfo('template_directory') .'/titan/js/bootstrap.bundle.js', array('jquery'), '1', true);
         wp_register_script('slider-logos', get_bloginfo('template_directory') . '/assets/librerias/js/slick.js', array('jquery'), '1', true);
         wp_register_script('parallax', get_bloginfo('template_directory') . '/assets/librerias/js/parallax.js', array('jquery'), '1', false);
