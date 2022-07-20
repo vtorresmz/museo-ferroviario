@@ -1,7 +1,7 @@
 jQuery(function($) {
     $(document).ready(function() {
         $(".carusel-destacados").slick({
-            slidesToShow: 1,
+            slidesToShow: 4,
             slidesToScroll: 1,
             autoplay: false,
             autoplaySpeed: 1000,
