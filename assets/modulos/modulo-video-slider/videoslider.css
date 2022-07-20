@@ -87,3 +87,8 @@
     height: 85vh;
     width: 100%;
 }
+.btn-ticket::before{
+    content: "\f3ff";
+    display: block;
+    font-family: 'Font Awesome 5 Free';
+}
