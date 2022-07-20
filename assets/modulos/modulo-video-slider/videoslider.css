@@ -1,17 +1,29 @@
-#carruselSuperior {
+/**/#carruselSuperior {
     height: 80vh;
     overflow: hidden;
 }
 
-#carruselSuperior video {
-    height: 110vh;
-}
-
+/*#carruselSuperior video {
+    height: 90vh;
+}*/
 #carruselSuperior .carousel-indicators {
     bottom: 10px;
     z-index: 100;
 }
-
+.video-videoslider-bg{
+    width: 100%;
+    filter: brightness(70%);
+-webkit-filter: brightness(70%);
+-moz-filter: brightness(70%);
+}
+.circulo{
+    width: 100px;
+     height: 100px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #5cb85c;
+}
 #carruselSuperior .carousel-indicators li {
     background-color: var(--color-generico-blanco);
     width: 10px;

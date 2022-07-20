@@ -199,3 +199,6 @@ add_action('widgets_init', 'widget_menu_footer');
 /*modulos*/
 //modulo time line
 include get_template_directory() . '/assets/modulos/modulo-loop-timeline/core-loop-timeline.php';
+/*modulos*/
+//modulo time line
+include get_template_directory() . '/assets/modulos/modulo-video-slider/core-videoslider.php';

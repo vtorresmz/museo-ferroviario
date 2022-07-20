@@ -1,10 +1,9 @@
 <style>
-    <?php include get_template_directory() . '/assets/modulos/modulo-videoslider/videoslider.css';?>
+    <?php include get_template_directory() . '/assets/modulos/modulo-video-slider/videoslider.css';?>
 </style>
 
 <!--videoslider-->
-
-<div id="carruselSuperior" class="carousel slide" data-ride="carousel" data-pause="false" data-interval="5000">
+<div id="carruselSuperior" class="carousel slide col-12 p-0" data-ride="carousel" data-pause="false" data-interval="5000">
     <div class="carousel-inner ajustar-videoslider">
 
         <?php
@@ -12,7 +11,7 @@
         $e = 0;
         $temp = $wp_query;
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-        $post_per_page = -1; // -1 shows all posts
+        $post_per_page = 1; // -1 shows all posts
         $args = array(
             'post_type' => 'videoslider',
             'orderby' => 'date',
@@ -40,9 +39,12 @@
                     <div class="title-carusel">
                         <div class="d-flex h-100 text-center align-items-center">
                             <div class="w-100 text-white">
-                                <h1 class="display-3"><?php the_field('texto_video');?></h1>
+                                <h1 class="display-3"><small><?php the_field('titulo1');?></small><?php the_field('titulo2');?></h1>
+                                <p><?php the_field('texto_video');?></p>
                             </div>
+                            <div class="circulo"></div>
                         </div>
+                        
                     </div>
                     </header>
 
