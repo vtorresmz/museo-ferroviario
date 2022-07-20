@@ -28,7 +28,7 @@ function actividades_register() {
         'menu_icon'  => 'dashicons-games',
         'hierarchical' => false,
         'menu_position' => null,
-        'supports' => array('title', 'excerpt', 'thumbnail','editor'),
+        'supports' => array('title', 'excerpt', 'thumbnail'),
         'rewrite' => array('slug' => 'actividades', 'with_front' => FALSE)
       ); 
 

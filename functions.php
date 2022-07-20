@@ -178,5 +178,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 include get_template_directory() . '/assets/assets.php';
 
+/* Inclusión módulo actividades */
+include get_template_directory() . '/assets/modulos/modulo-actividades/core-actividades.php';
+
+
 
 
