@@ -17,12 +17,15 @@
 -moz-filter: brightness(70%);
 }
 .circulo{
-    width: 100px;
-     height: 100px;
-     -moz-border-radius: 50%;
-     -webkit-border-radius: 50%;
-     border-radius: 50%;
-     background: #5cb85c;
+    width: 785px;
+    height: 785px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #00000080;
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }
 #carruselSuperior .carousel-indicators li {
     background-color: var(--color-generico-blanco);
