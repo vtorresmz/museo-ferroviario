@@ -40,8 +40,8 @@
                         <div class="d-flex h-100 text-center align-items-center">
                             <div class="w-100 text-white d-flex flex-column align-items-center">
                                 <h1 class="display-3 d-flex flex-column"><span class="subtitulo"><?php the_field('titulo1');?></span><?php the_field('titulo2');?></h1>
-                                <p><?php the_field('texto_video');?></p><i class="fas fa-ticket-alt"></i>
-                                <a href="#" class="btn btn-ticket">Reserva su ticket</a>
+                                <p><?php the_field('texto_video');?></p>
+                                <a href="#" class="btn btn-ticket"><i class="fas fa-ticket-alt mr-2"></i>Reserva su ticket</a>
                             </div>
                         </div>
                         <div class="circulo"></div>
