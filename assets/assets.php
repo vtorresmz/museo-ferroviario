@@ -202,3 +202,6 @@ include get_template_directory() . '/assets/modulos/modulo-loop-timeline/core-lo
 /*modulos*/
 //modulo time line
 include get_template_directory() . '/assets/modulos/modulo-video-slider/core-videoslider.php';
+
+//modulo noticias
+include get_template_directory() . '/assets/modulos/modulo-noticias/core-noticias.php';
