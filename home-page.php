@@ -21,7 +21,7 @@ get_header();
 			<?php include get_template_directory() . '/assets/modulos/modulo-video-slider/video-slider.php';?>
 			</div>
 		</div>
-	
+	<div class="container"><?php include get_template_directory() . '/assets/modulos/modulo-noticias/custom-loop-noticias.php';?></div>
 		<?php
 		while ( have_posts() ) :
 			the_post();

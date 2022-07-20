@@ -1,0 +1,23 @@
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.b-btn {
+    background: #E9ECC7 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 8px #756C301F;
+    border: 2px solid #FFFFFF;
+    border-radius: 16px;
+    opacity: 1;
+
+}
+.body-card{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 20px #00000014;
+    border-radius: 16px;
+    opacity: 1;
+
+}
