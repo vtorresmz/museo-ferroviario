@@ -3,6 +3,7 @@
     <div class="container-fluid">
         <!---row-->
         <div class="row w-100 d-flex justify-content-between">
+            
             <!---navbrand--><div class="navbar-brand col-3">
                 <?php
                 the_custom_logo();

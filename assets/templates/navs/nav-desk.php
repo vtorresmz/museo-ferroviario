@@ -6,6 +6,13 @@
     <div class="container-fluid">
         <!---row-->
         <div class="row w-100">
+            <div class="container row">
+                <div class="col-lg-8">hoy abierto hasta las 17:30 hrs.</div>
+                <div class="col-lg-1"><a href="">Donaciones</a></div>
+                <div class="col-lg-1"><a href="">Corporativo</a></div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-1"></div>
+            </div>
             <!---navbrand-->
             <div class="navbar-brand col-6 col-md-1">
 
@@ -13,7 +20,7 @@
                 the_custom_logo();
                 if (is_front_page() && is_home()) :
                 ?>
-                    <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+                   
                 <?php else :
                 ?>
                     <p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></p>
@@ -35,7 +42,8 @@
                             <span class="linea-hamburguesa"></span>
                             <span class="linea-hamburguesa"></span>
                             </div>
-                        <span class="boton-texto">Categorías</span>
+                
+                        
                     </button>
 
                 </a>
@@ -54,12 +62,12 @@
                     array(
                         'theme_location' => 'menu-superior',
                         'menu_id'        => 'navbar',
-                        'menu_class'     => 'navbar-nav m-auto nav-menu d-flex justify-content-between w-100 px-3',
+                        'menu_class'     => 'navbar-nav m-auto nav-menu d-flex justify-content-between w-50 px-3',
                         'container_class' => 'nav col-12 col-md-8',
                     )
                 );
                 ?>
-
+               
 
             </div>
         </div>
