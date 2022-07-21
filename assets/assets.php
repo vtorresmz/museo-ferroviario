@@ -32,7 +32,9 @@ function titan_framework()
     wp_enqueue_style('base');
     wp_enqueue_style('mobile');
     wp_enqueue_style('bootstrap-css');
+    wp_enqueue_style('slider-fluid');
     wp_enqueue_style('museo');
+    
 
 
 }

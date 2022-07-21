@@ -68,6 +68,11 @@
 h4 {
     color: #DBA134;
 }
+h4::before {
+    content: "";
+    border-left: 3px solid #DBA134;
+    padding-right: 12px;
+}
 .bajada, h5{
     color: #000;
 }
@@ -83,10 +88,12 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*opacity: 0;*/
-    transition: 1s ease;
+    opacity: 0;
+    transition: 0.5s ease;
 }
-
+.tarjeta-patrimonio:hover .blackbox {
+    opacity: 1;
+}
 .v-mas {
     color: #fff;
     border-bottom: 2px solid #fff;

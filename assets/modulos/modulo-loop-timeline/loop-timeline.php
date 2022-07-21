@@ -23,8 +23,8 @@
         $wp_query = new WP_Query($args);
         if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
             
-                <div class="tarjetas-hotel slidel col-3">
-                <a class="" href="#">
+                <div class="tarjetas-hotel slidel col-3" data-bs-toggle="modal" data-bs-target="#exampleModal<?php the_ID(); ?>">
+                <a class="tarjeta-patrimonio" href="#" >
                     <figure class="background-white">
                         <div class="bg-fondo-img shadow rounded" style="background-image:url('<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="<?php echo get_the_excerpt(); ?>');">
                     <div class="blackbox rounded"><p class="v-mas">Ver más</p></div></div>
@@ -37,9 +37,41 @@
                             <p class="bajada"><?php echo get_the_excerpt(); ?></p>
                            
                         </caption>
+
+                        <div class="modal fade" id="exampleModal<?php the_ID(); ?>" tabindex="-1" aria-labelledby="exampleModal<?php the_ID(); ?>Label" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="col-12"><img src="<?php  echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="<?php  echo get_the_excerpt(); ?>');"></div>
+          <div class="col-12">
+        <h4><?php  the_field('linea_ano'); ?></h4>
+        <h5><?php  echo get_the_title(); ?></h5>
+        <p><?php   the_field('info_hecho'); ?></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
                     </figure>
+                    
                     </a>
                 </div>
+
+            <!--MODAL -->
+            
+                <!-- Button trigger modal --> 
+
+
+ <!--Modal -->
+
 
             <?php endwhile; ?>
 

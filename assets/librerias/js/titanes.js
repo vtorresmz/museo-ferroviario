@@ -9,6 +9,12 @@ jQuery(function($) {
             dots: false,
             pauseOnHover: true,
             responsive: [{
+                breakpoint: 1079,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+                {
                     breakpoint: 768,
                     settings: {
                         slidesToShow: 1,
