@@ -32,7 +32,6 @@ get_header();
 		?>
 
 	</main><!-- #main -->
-<h3>loop</h3>
 	<?php include get_template_directory() . '/assets/modulos/modulo-actividades/actividades.php';?>
 
 <?php
