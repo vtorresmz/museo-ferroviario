@@ -53,9 +53,9 @@
           <div class="col-md-6 "><img class="foto-linea" src="<?php  echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="<?php  echo get_the_excerpt(); ?>');"></div>
           <div class="col-md-6">
           <div class="col-12 d-flex justify-content-end"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <h4><?php  the_field('linea_ano'); ?></h4>
-        <h5><?php  echo get_the_title(); ?></h5>
-        <p><?php   the_field('info_hecho'); ?></p>
+        <h4 class="py-3"><?php  the_field('linea_ano'); ?></h4>
+        <h5 class="py-3"><?php  echo get_the_title(); ?></h5>
+        <p class="py-3"><?php   the_field('info_hecho'); ?></p>
         </div>
       </div>
       <div class="modal-footer">
