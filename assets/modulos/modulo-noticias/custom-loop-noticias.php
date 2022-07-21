@@ -6,7 +6,7 @@
 
 <div id="carrusel-reconocimiento" class="container">
   <div class="row d-flex justify-content-evenly">
-  <h2 class="text-center">Noticias</h2>
+  <h2 class="titulo2">Noticias</h2>
 
         <?php 
         $i = 0;
@@ -53,5 +53,5 @@
   
    
 </div>
-<button class="mt-5 d-block btn-ext col-12 col-md-2 mx-auto"><a class="btn-int" href="">ver todas las noticias</a></button>
+<button class="mt-5 d-block btn-ext col-12 col-md-2 mx-auto"><a class="btn-int" href="/museo/noticias">ver todas las noticias</a></button>
 </div>
