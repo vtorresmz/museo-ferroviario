@@ -118,6 +118,9 @@ h4::before {
     border: 3px solid #DBA134;
 }
 
+.foto-linea {
+    background-color: #F2F6F8;
+}
 .linea-tiempo::after{
     content:
     '';
@@ -128,4 +131,34 @@ h4::before {
     display:
     block;
     border-top: 2px dashed #DBA134;
+}
+.modal.fade {
+    height: 80vh;
+    width: 90%;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    padding: 0px!important;
+    margin: 0px!important;
+    z-index: 99999;
+}
+
+.modal-dialog {
+    width: 50%;
+    max-width: 40%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+.modal-content {
+    max-width: 70%;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    padding: 0%;
 }
