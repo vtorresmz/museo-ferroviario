@@ -17,6 +17,8 @@ get_header();
 
 	<main id="primary" class="site-main">
 		<?php include get_template_directory() . '/assets/modulos/modulo-video-slider/video-slider.php';?>
+		<?php include get_template_directory() . '/assets/modulos/modulo-horarioyprecio/horarioyprecio.php';?>
+
 	<div class="container"><?php include get_template_directory() . '/assets/modulos/modulo-noticias/custom-loop-noticias.php';?></div>
 		<?php
 		while ( have_posts() ) :
