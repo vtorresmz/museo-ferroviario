@@ -87,14 +87,3 @@
     height: 85vh;
     width: 100%;
 }
-
-/*Estilo btn ticket*/
-.btn-ticket{
-    background-color: #55939E;
-    border: solid white 1px;
-    border-radius: 4px;
-    padding: 1rem;
-}
-.btn-ticket i{
-    margin-right: 1rem;
-}

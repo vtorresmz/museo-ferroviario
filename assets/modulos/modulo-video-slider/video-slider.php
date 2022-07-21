@@ -65,3 +65,18 @@
 
     </div>
 </div>
+<script>
+jQuery(function($){
+    $( document ).ready(function() {
+    //Efecto btn ticket
+    $( ".btn-ticket" ).mouseleave(function() {
+        $('.btn-ticket i').css("transform", "rotate(129deg)").css("transition-duration","500ms")
+        $('.btn-ticket').css("transform","translate(0%, 0%)")
+    });
+    $( ".btn-ticket" ).mouseover(function() {
+        $('.btn-ticket i').css("transform", "rotate(60deg)").css("transition-duration","500ms")
+        $('.btn-ticket').css("transform","translate(0%, -10%)")
+    });
+});
+})
+</script>

@@ -30,9 +30,9 @@ function titan_framework()
     wp_enqueue_style('fuentes');
     wp_enqueue_style('root');
     wp_enqueue_style('base');
-    wp_enqueue_style('museo');
     wp_enqueue_style('mobile');
     wp_enqueue_style('bootstrap-css');
+    wp_enqueue_style('museo');
 
 
 }

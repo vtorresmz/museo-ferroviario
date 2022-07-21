@@ -332,3 +332,18 @@ body .lp-quiz-buttons .form-button-finish-course {
 .learn-press-breadcrumb {
     margin: 1rem auto 1rem auto!important;
 }
+
+/*Estilo btn ticket*/
+.btn-ticket{
+    background-color: #55939E !important;
+    border: solid white 3px;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+}
+.btn-ticket:hover .btn{
+    background-color: #55939E !important;
+}
+.btn-ticket i{
+    margin-right: 0.7rem;
+    transform: rotate(129deg);
+}
