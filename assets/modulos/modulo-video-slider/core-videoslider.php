@@ -36,3 +36,109 @@ function videoslider_register() {
 }
 
 add_action('init', 'videoslider_register');
+
+//campos ACF
+if( function_exists('acf_add_local_field_group') ):
+
+    acf_add_local_field_group(array(
+        'key' => 'group_62d741abaa54d',
+        'title' => 'Slider video',
+        'fields' => array(
+            array(
+                'key' => 'field_62d741b894ceb',
+                'label' => 'Slider video',
+                'name' => 'video_para_carrusel_principal',
+                'type' => 'text',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'maxlength' => '',
+            ),
+            array(
+                'key' => 'field_62d742f4b821e',
+                'label' => 'Texto video',
+                'name' => 'texto_video',
+                'type' => 'textarea',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'new_lines' => '',
+            ),
+            array(
+                'key' => 'field_62d743f908c67',
+                'label' => 'Titulo1',
+                'name' => 'titulo1',
+                'type' => 'text',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'maxlength' => '',
+            ),
+            array(
+                'key' => 'field_62d74414aa66e',
+                'label' => 'Titulo2',
+                'name' => 'titulo2',
+                'type' => 'text',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'maxlength' => '',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'videoslider',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+        'show_in_rest' => 0,
+    ));
+    
+    endif;		
