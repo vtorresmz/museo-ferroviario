@@ -206,5 +206,7 @@ include get_template_directory() . '/assets/modulos/modulo-video-slider/core-vid
 include get_template_directory() . '/assets/modulos/modulo-noticias/core-noticias.php';
 //modulo noticias
 include get_template_directory() . '/assets/modulos/modulo-horarioyprecio/core-horarioyprecio.php';
+//modulo-botanico
+include get_template_directory() . '/assets/modulos/modulo-botanico/core-botanico.php';
 
 
