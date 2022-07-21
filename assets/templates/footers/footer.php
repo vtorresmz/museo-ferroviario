@@ -1,75 +1,61 @@
-<div class="container">
-
+<style>
+    <?php include get_template_directory() . '/assets/templates/footers/footer.css'; ?>
+</style>
+<footer class="container-fluid bg-footer pt-5">
+<!-- Footer -->
 <div class="row">
-	<div class="col-12 col-sm-12 col-md-12 col-lg-10">
+	<div class="col-12 col-sm-12 col-md-10 col-lg-10 mx-auto">
 		<div class="row">
-			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="col-12 col-sm-6 col-md-3 col-lg-2">
+
+			<?php
+			if (is_active_sidebar('logo_footer')) :
+				dynamic_sidebar('logo_footer');
+			endif; ?>
+			</div>
+			<div class="col-12 col-sm-6 col-md-3 col-lg-2">
 
 				<?php
-				if (is_active_sidebar('menu_uno_izquierdo')) :
-					dynamic_sidebar('menu_uno_izquierdo');
+				if (is_active_sidebar('columna_1')) :
+					dynamic_sidebar('columna_1');
 				endif; ?>
 			</div>
 
-			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="col-12 col-sm-6 col-md-3 col-lg-2">
  
 				<?php 
-				if (is_active_sidebar('menu_dos_izquierdo')) :
-					dynamic_sidebar('menu_dos_izquierdo');
+				if (is_active_sidebar('columna_2')) :
+					dynamic_sidebar('columna_2');
 				endif; ?>
 			</div>
 
-			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="col-12 col-sm-6 col-md-3 col-lg-2">
 
 				<?php
-				if (is_active_sidebar('menu_uno_derecho')) :
-					dynamic_sidebar('menu_uno_derecho');
+				if (is_active_sidebar('columna_2_2')) :
+					dynamic_sidebar('columna_2_2');
 				endif; ?>
 			</div>
 
-			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="col-12 col-sm-6 col-md-3 col-lg-2">
 
 				<?php
-				if (is_active_sidebar('menu_dos_derecho')) :
-					dynamic_sidebar('menu_dos_derecho');
+				if (is_active_sidebar('columna_3')) :
+					dynamic_sidebar('columna_3');
 				endif; ?>
 			</div>
-			<div class="col-12 col-sm-12 col-md-12 col-lg-12">
-
-				<?php
-				if (is_active_sidebar('menu_logos')) :
-					dynamic_sidebar('menu_logos');
-
-				endif;
-				?>
-			</div>
+			
 		</div>
 	</div>
 
-	<div class="col-12 col-sm-12 col-md-12 col-lg-2">
-
-
-		<?php
-		if (is_active_sidebar('menu_derecho_form')) :
-			dynamic_sidebar('menu_derecho_form');
-		endif;
-		?>
-
-	</div>
 </div>
 
-<div class="menu-pie-pagina col-12 col-sm-12 col-md-12 col-lg-12">
+<div class="menu-pie-pagina col-12 col-sm-12 col-md-12 col-lg-12 text-center">
 	<?php
-	if (is_active_sidebar('menu_pie_pagina')) :
-		dynamic_sidebar('menu_pie_pagina');
-
-	endif;
-	?>
-	<?php
-	if (is_active_sidebar('menu_pie-pagina')) :
-		dynamic_sidebar('menu_pie-pagina');
+	if (is_active_sidebar('columna_12')) :
+		dynamic_sidebar('columna_12');
 	endif;
 	?>
 
 </div>
-</div>
+</footer>
