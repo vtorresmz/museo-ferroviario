@@ -2,9 +2,10 @@
     <?php include get_template_directory() . '/assets/modulos/modulo-noticias/noticias.css'; ?>
 </style>
 
-<!--Slider-->
+<!--Custom loop Noticias-->
 
-<div id="carrusel-reconocimiento" class="row d-flex justify-content-evenly">
+<div id="carrusel-reconocimiento" class="container">
+  <div class="row d-flex justify-content-evenly">
   <h2 class="text-center">Noticias</h2>
 
         <?php 
@@ -14,7 +15,7 @@
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         $post_per_page = 3; // -1 shows all posts
         $args = array(
-            'post_type' => 'noticias',
+            'post_type' => 'post',
             'orderby' => 'date',
             'order' => 'DESC',
             'paged' => $paged,
@@ -22,20 +23,17 @@
         );
         $wp_query = new WP_Query($args);
         if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-
-   <div class="card body-card" style="width: 18rem;">
+   <div class="card body-card col-12 col-md-3">
   
   <figure class="card-img-top">
-  <?php $img_carta = get_field( 'img_carta' ); ?>
-<?php if ( $img_carta ) : ?>
-	<img src="<?php echo esc_url( $img_carta['url'] ); ?>" alt="<?php echo esc_attr( $img_carta['alt'] ); ?>" />
-<?php endif; ?>
+  <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
+  
   </figure>
    
   <div class="card-body  ">
-    <h5 class="card-title"><?php the_field( 'titulo_carta' ); ?></h5>
+    <h5 class="card-title"><?php echo get_the_title() ?></h5>
     <p class="card-text"> <?php echo get_the_excerpt(); ?> </p>
-   <button class="btn b-btn "><a href="#" class="">Ver más</a></button> 
+   <button class="btn b-btn "><a href="<?php the_permalink(); ?>" class="">Ver más</a></button> 
   </div>
 </div>
 
@@ -50,6 +48,10 @@
         $wp_query = $temp ?>
 
         <!--</ol>-->
-
    
+     
+  
+   
+</div>
+<button class="mt-5 d-block btn-ext col-12 col-md-2 mx-auto"><a class="btn-int" href="">ver todas las noticias</a></button>
 </div>
