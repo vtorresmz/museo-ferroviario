@@ -334,13 +334,13 @@ body .lp-quiz-buttons .form-button-finish-course {
 }
 
 /*Estilo btn ticket*/
-.btn-ticket{
+.btn-ticket, .btn-ticket a{
     background-color: #55939E !important;
     border: solid white 3px;
     border-radius: 15px;
     padding: 1rem 2rem;
 }
-.btn-ticket:hover .btn{
+.btn-ticket:hover .btn, .btn-ticket a{
     background-color: #55939E !important;
 }
 .btn-ticket i{
