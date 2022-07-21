@@ -19,7 +19,7 @@ function titan_framework()
     wp_register_style('museo', get_template_directory_uri() . '/assets/librerias/css/museo.css', 'all');
     wp_register_style('slider-fluid', get_template_directory_uri() . '/assets/librerias/css/slider-fluid.css', 'all');
     wp_register_style('mobile', get_template_directory_uri() . '/assets/librerias/css/mobile.css', 'all');
-
+ 
    
 
 

@@ -109,3 +109,35 @@
         width: 250%;
     }
   }
+
+
+  /*Estilo btn ticket*/
+.btn-ticket{
+    background-color: #55939E !important;
+    border: solid white 3px;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+}
+.btn-ticket-nav a{
+    background-color: #55939E !important;
+    border: solid white 3px !important;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+}
+.btn-ticket-nav{
+    color: white!important;
+}
+.btn-ticket:hover .btn{
+    background-color: #55939E !important;
+}
+.btn-ticket-nav:hover a{
+    color: white!important;
+}
+.btn-ticket i{
+    margin-right: 0.7rem;
+    transform: rotate(129deg);
+}
+.btn-ticket-nav i{
+    margin-right: 0.7rem;
+    transform: rotate(129deg);
+}
