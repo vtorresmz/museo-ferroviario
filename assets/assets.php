@@ -182,11 +182,12 @@ function widget_menu_footer()
 
 //footer
 
-register_sidebar(array('name' => 'areas', 'id' => 'columna_1', 'before_widget' => '<div id="%1$S" class="widget_academia_footer">', 'after_widget' => '</div>', 'before_title' => '<div class="heading"><h3 class="titulo-menu-footer">', 'after_title' => '</h3></div>'));
-register_sidebar(array('name' => 'categoría', 'id' => 'columna_2', 'before_widget' => '<div id="%1$S" class="widget_academia_footer">', 'after_widget' => '</div>', 'before_title' => '<div class="heading"><h3 class="titulo-menu-footer">', 'after_title' => '</h3></div>'));
-register_sidebar(array('name' => 'Próximos cursos', 'id' => 'columna_2_2', 'before_widget' => '<div id="%1$S" class="widget_academia_footer">', 'after_widget' => '</div>', 'before_title' => '<div class="heading"><h3 class="titulo-menu-footer">', 'after_title' => '</h3></div>'));
-register_sidebar(array('name' => 'Mis cursos', 'id' => 'columna_3', 'before_widget' => '<div id="%1$S" class="widget_academia_footer">', 'after_widget' => '</div>', 'before_title' => '<div class="heading"><h3 class="titulo-menu-footer">', 'after_title' => '</h3></div>'));
-register_sidebar(array('name' => 'Logo academia', 'id' => 'logo_footer', 'before_widget' => '<div id="%1$S" class="widget_academia_footer">', 'after_widget' => '</div>', 'before_title' => '<div class="heading"><h3 class="titulo-menu-footer">', 'after_title' => '</h3></div>'));
+register_sidebar(array('name' => 'Mapa', 'id' => 'columna_1', 'before_widget' => '<div id="%1$S" class="widget_academia_footer">', 'after_widget' => '</div>', 'before_title' => '<div class="heading"><h3 class="titulo-menu-footer">', 'after_title' => '</h3></div>'));
+register_sidebar(array('name' => 'Contacto', 'id' => 'columna_2', 'before_widget' => '<div id="%1$S" class="widget_academia_footer">', 'after_widget' => '</div>', 'before_title' => '<div class="heading"><h3 class="titulo-menu-footer">', 'after_title' => '</h3></div>'));
+register_sidebar(array('name' => 'Páginas Interiores', 'id' => 'columna_2_2', 'before_widget' => '<div id="%1$S" class="widget_academia_footer">', 'after_widget' => '</div>', 'before_title' => '<div class="heading"><h3 class="titulo-menu-footer">', 'after_title' => '</h3></div>'));
+register_sidebar(array('name' => 'RRSS y Partner', 'id' => 'columna_3', 'before_widget' => '<div id="%1$S" class="widget_academia_footer">', 'after_widget' => '</div>', 'before_title' => '<div class="heading"><h3 class="titulo-menu-footer">', 'after_title' => '</h3></div>'));
+register_sidebar(array('name' => 'Sección footer', 'id' => 'columna_12', 'before_widget' => '<div id="%1$S" class="widget_academia_footer">', 'after_widget' => '</div>', 'before_title' => '<div class="heading"><h3 class="titulo-menu-footer">', 'after_title' => '</h3></div>'));
+register_sidebar(array('name' => 'Logo Museo', 'id' => 'logo_footer', 'before_widget' => '<div id="%1$S" class="widget_academia_footer">', 'after_widget' => '</div>', 'before_title' => '<div class="heading"><h3 class="titulo-menu-footer">', 'after_title' => '</h3></div>'));
 }
 
 add_action('widgets_init', 'widget_menu_footer');
