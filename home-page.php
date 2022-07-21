@@ -16,11 +16,7 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-		<div class="container-fluid">
-			<div class="row">
-			<?php include get_template_directory() . '/assets/modulos/modulo-video-slider/video-slider.php';?>
-			</div>
-		</div>
+		<?php include get_template_directory() . '/assets/modulos/modulo-video-slider/video-slider.php';?>
 	<div class="container"><?php include get_template_directory() . '/assets/modulos/modulo-noticias/custom-loop-noticias.php';?></div>
 		<?php
 		while ( have_posts() ) :

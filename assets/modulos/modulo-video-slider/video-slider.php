@@ -3,7 +3,9 @@
 </style>
 
 <!--videoslider-->
-<div id="carruselSuperior" class="carousel slide col-12 p-0" data-ride="carousel" data-pause="false" data-interval="5000">
+<div class="container-fluid">
+			<div class="row">
+			<div id="carruselSuperior" class="carousel slide col-12 p-0" data-ride="carousel" data-pause="false" data-interval="5000">
     <div class="carousel-inner ajustar-videoslider">
 
         <?php
@@ -65,6 +67,9 @@
 
     </div>
 </div>
+			</div>
+		</div>
+
 <script>
 jQuery(function($){
     $( document ).ready(function() {
