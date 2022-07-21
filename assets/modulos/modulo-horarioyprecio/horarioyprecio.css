@@ -41,12 +41,12 @@
   .titulo:after{
   content:'';width: 33px;
   height:3px;
-  background-color:#000;display: block;
+  background-color:#DBA134;display: block;
   margin: .5rem;
   }
   
   .titulo:before{
   content:'';width: 33px;
   height:3px;
-  background-color:#000;display: block;margin: .5rem;
+  background-color:#DBA134;display: block;margin: .5rem;
   }
