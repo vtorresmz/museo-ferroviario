@@ -1,3 +1,23 @@
+.font-sz{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.a-item-center{
+    align-items: center;
+}
+.p-l {
+    padding-left: 120px;
+}
+.nav-centrado {
+    height: 80px;
+}
+.color-nav-superior {
+    background-color: #e9ecc7;
+}
+.border-circular {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
 .boton-menu-desk {
     background-color: unset;
     border: unset;
@@ -65,6 +85,7 @@
 
 #navbar.navbar-nav.pop-menu .menu-item-has-children .nav-item.dropdown:nth-child(n) {
     display: none;
+   
 }
 
 #navbar.navbar-nav.pop-menu .active {
@@ -101,7 +122,7 @@
 .pop-menu .menu-item {
     height: calc(5vh - 0.1vh);
 }
-
+#navbar.ul
 
 /*carrito*/
 
